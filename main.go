@@ -54,7 +54,7 @@ func main() {
 }*/
 
 // Quarto commit:
-func main() {
+/*func main() {
 	var opcao int
 
 	for {
@@ -99,3 +99,13 @@ for i, nome := range nomes {
 //for infinito + break = ideal para menus ou interações contínuas
 //for range = ideal para percorrer coleções de dados
 */
+
+// Sexto commit: Exemplo de breack condicao que para o loop imediatamente
+func main() {
+	for i := 1; i <= 10; i++ {
+		if i == 5 {
+			break // para tudo quando i for 5
+		}
+		fmt.Println("Valor de i:", i)
+	}
+}
