@@ -35,7 +35,7 @@ func main() {
 }*/
 
 // Terceiro commit:
-const (
+/*const (
 	_ = iota // ignoramos o 0 (opcional, mas comum)
 
 	// Cada linha recebe um valor crescente de iota
@@ -51,4 +51,39 @@ func main() {
 	fmt.Println("Subtração:    ", Subtracao)
 	fmt.Println("Multiplicação:", Multiplicacao)
 	fmt.Println("Divisão:      ", Divisao)
+}*/
+
+// Quarto commit:
+func main() {
+	var opcao int
+
+	for {
+		fmt.Println("\n=== MENU ===")
+		fmt.Println("1 - Dizer Olá")
+		fmt.Println("2 - Somar 2 + 2")
+		fmt.Println("3 - Sair")
+		fmt.Print("Escolha uma opção: ")
+
+		fmt.Scan(&opcao)
+
+		switch opcao {
+		case 1:
+			fmt.Println("Olá! Tudo bem com você?")
+		case 2:
+			fmt.Println("2 + 2 =", 2+2)
+		case 3:
+			fmt.Println("Saindo do programa... Até logo!")
+			break // Sai do switch, mas não do for
+		default:
+			fmt.Println("Opção inválida. Tente novamente.")
+		}
+
+		// Verifica se o usuário escolheu sair
+		if opcao == 3 {
+			break // Agora sim: sai do laço for
+		}
+	}
 }
+
+// O primeiro break dentro do switch só sai do switch, não do for.
+//A verificação com if opcao == 3 é onde usamos o break para sair do laço for, encerrando o programa.
