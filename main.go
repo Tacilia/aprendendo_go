@@ -87,3 +87,11 @@ func main() {
 
 // O primeiro break dentro do switch só sai do switch, não do for.
 //A verificação com if opcao == 3 é onde usamos o break para sair do laço for, encerrando o programa.
+
+//Quinto commit - Exemplo for range (para listas, arrays, strings, mapas...):
+/*nomes := []string{"Ana", "Bruno", "Carlos"}
+
+for i, nome := range nomes {
+    fmt.Println("Índice:", i, "Nome:", nome)
+}
+*/
