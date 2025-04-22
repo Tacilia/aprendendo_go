@@ -4,15 +4,16 @@ import (
 	"fmt"
 )
 
-var nome string
-var num1, num2 float64
-
+//Primeiro Commit:
 //func main() {
 //fmt.Print("Digite seu nome: ")
 //fmt.Scanln(&nome) // fmt.Scan, fmt.Scanln, fmt.Scanf. São usados para ler valores do terminal (entrada padrão).
 //fmt.Println("Olá,", nome)
 //}
 
+//Segundo Commit:
+/*var nome string
+var num1, num2 float64
 func main() {
 	// Entrada do nome
 	fmt.Print("Digite seu nome: ")
@@ -31,4 +32,23 @@ func main() {
 
 	// Exibe a resposta
 	fmt.Println(mensagem)
+}*/
+
+// Terceiro commit:
+const (
+	_ = iota // ignoramos o 0 (opcional, mas comum)
+
+	// Cada linha recebe um valor crescente de iota
+	Soma          = iota + 1       // 1 + 1 = 2
+	Subtracao     = (iota - 1) * 2 // (2 - 1) * 2 = 2
+	Multiplicacao = iota * 3       // 3 * 3 = 9
+	Divisao       = 12 / iota      // 12 / 4 = 3
+)
+
+func main() {
+	fmt.Println("Constantes geradas com iota e operações:")
+	fmt.Println("Soma:         ", Soma)
+	fmt.Println("Subtração:    ", Subtracao)
+	fmt.Println("Multiplicação:", Multiplicacao)
+	fmt.Println("Divisão:      ", Divisao)
 }
