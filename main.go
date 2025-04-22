@@ -94,4 +94,8 @@ func main() {
 for i, nome := range nomes {
     fmt.Println("Índice:", i, "Nome:", nome)
 }
+//for com três partes = ideal para contador fixo
+//for com condição = ideal para repetição até algo mudar
+//for infinito + break = ideal para menus ou interações contínuas
+//for range = ideal para percorrer coleções de dados
 */
