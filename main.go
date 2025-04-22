@@ -101,11 +101,22 @@ for i, nome := range nomes {
 */
 
 // Sexto commit: Exemplo de breack condicao que para o loop imediatamente
-func main() {
+/*func main() {
 	for i := 1; i <= 10; i++ {
 		if i == 5 {
 			break // para tudo quando i for 5
 		}
 		fmt.Println("Valor de i:", i)
+	}
+}*/
+
+// Setimo commt - pulando número proibido e continuando o loop
+func main() {
+	for i := 1; i <= 5; i++ {
+		if i == 3 {
+			fmt.Println("3 é proibido!")
+			continue
+		}
+		fmt.Println("Número:", i)
 	}
 }
